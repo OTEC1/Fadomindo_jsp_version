@@ -1,0 +1,798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	  xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:f="http://xmlns.jcp.org/jsf/core"
+	  xmlns:p="http://primefaces.org/ui">
+	
+
+<h:head>
+<title>Fedomindo C Panel</title>
+
+			<link rel="icon" href="Images/rider.png" sizes="40x40" type="image/png"/>
+	  		
+	  		 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      
+	  	
+	  	  <!--Sweet alert-->
+       <script  type="text/javascript"  src="folder1/bootstrap.js"/>
+        <script  type="text/javascript"  src="folder1/bootstrap.min.js"/>     
+        <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"/>
+        <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css"/>
+        <script    type="text/javascript"    src="folder1/jquery-1.8.3.js"/>
+   
+   
+   <script  type="text/javascript"  src="folder1/jquery-1.8.3.js"/>
+		   <script>
+		      function spinners() {
+			
+		    	  	$('.spin').fadeIn("fast");
+		 		  }  
+		   
+		   
+		 		  function close_spinner()() {
+		 			 	$('.spin').fadeOut("fast");
+					}
+		   
+		   </script>
+
+        
+        
+        
+<style>
+
+		*{
+		padding: 0px;
+		margin: 0px;
+		
+		}
+		.body{
+		overflow-x:hidden; 
+		}
+		
+		.base{
+		background: #ECECEC;
+		width:100%;
+		text-align: center;
+	
+		}
+		
+		
+		.ui-growl{
+				
+				top:50%;
+				left: 40%;
+			}
+		
+		
+		
+		.inner_section{
+		display:inline-block;
+		background: #fff;
+		width:90%;
+		}
+		
+		.up_sec{
+		     float:left;
+			width:400px;
+			height:550px;
+	    	background:#ECECEC;
+			border-radius: 10px;
+			margin-right: 100px;
+			}
+			
+		.view_order{
+		   float:right;
+			width:400px;
+			height:550px;
+			background:#ECECEC;
+			border-radius: 10px;
+			margin-right: 100px;
+			}
+			
+			.spa{
+		    	margin-left:110px; 
+				}
+			
+	
+			
+		.upload-so{
+				padding: 5px;
+				border:none;
+				border-radius: 5px;
+				color:#fff;
+				background-color: #2ED9EC;
+				cursor: pointer;
+					
+				}
+
+
+				.upload-do{
+				
+				padding: 5px;
+				border:none;
+				border-radius: 5px;
+				color:#fff;
+				background-color: #1AFF48;
+				cursor: pointer;
+			     margin-right:25px;
+			     margin-top: 10px;
+				}
+				
+
+		.price{
+				width: 250px;
+				height: 10px;
+				border:none;
+				border-radius:10px;
+				padding: 10px;
+			}
+			
+			
+			
+		.write{
+				width: 250px;
+				height: 200px;
+				border:none;
+				border-radius:10px;
+				padding: 10px;
+			}
+			
+		.select{
+			width: 200px;
+			
+			}			
+			
+			.cats{
+				margin-right:20px;
+				width:130px;
+				float: right;
+				}
+			
+			.pics{
+					width: 140px;
+					cursor: pointer;
+				}
+			
+		
+	
+		    	.top_nav{
+				background: #E59327;
+				width:100%;
+				height: 60px;
+				
+				}
+				
+				.headers{
+					padding:10px;
+					color: #fff;
+					font-size: 40px;
+					background: none;
+					border:none;
+					cursor: pointer;
+					}
+
+				.headers1{
+			    	border: 2px solid #000;
+			    	border-radius: 5px;
+			    	margin: 10px;
+					float:right;
+					padding:7px;
+					color: #000;
+					font-size: 15px;
+					cursor: pointer;
+					}
+		
+				hr{
+			    	width:70%;
+			    	margin-top:5px;
+			    	margin-left: 15%;
+				}
+				
+				.jats{
+				  padding: 5px;
+				  border: 2px solid #000;
+				  border-radius: 5px;
+					}
+			
+			
+					.boxes{
+					width: 80%;
+					align-content:center;
+					background-color:#ECECEC;
+					border-radius: 10px;
+					box-shadow: 0px 0px 5px 5px rgba(0,0,0.3);
+					display: inline-block;
+					}
+			
+			
+			       .Tcrollbar{ 
+                    overflow: scroll;
+                    height:370px;
+                    width:90%;
+                    overflow-y:scroll;
+                    overflow-x:hidden;
+                   }
+
+
+                  #style-2::-webkit-scrollbar{
+                  width: 7px;
+                  }
+
+               
+                 #style-2::-webkit-scrollbar-thumb{
+                  background:none;
+                  border-radius: 5px;
+                  margin-right: 10px;
+                  }
+
+                  .Torce-overflow{
+                   min-height: 450px;
+                    }
+
+
+
+		
+				
+				        .btn{
+                   padding: 5px;
+                   color:#fff;
+                   font-size:2em;
+                   font-family: sans-serif;
+                   border:none;
+                   float: right;
+                   margin:5px;
+                   background: red;
+                   cursor: pointer;
+                   border-radius: 3px;
+                   
+                   }
+                   
+                   
+                   	.select{
+				width: 200px;	
+				}	
+
+				.siz{
+				
+						max-width: 100px;
+						width:100px;
+						overflow: scroll;
+					}
+	
+				
+				.spin{
+						display:  none;
+						height: 100px;
+						width: 100px;
+						 transfrom:transition(-50px -50px)
+					}
+
+ @media(max-width:1200px)    { 
+	
+
+		
+		.base{
+		width:100%;
+		height:1050px;
+		text-align: center;
+		}
+		
+	 .top_nav{
+		background: #E59327;
+		height: 70px;
+		}
+		
+		.inner_section{
+		display:inline-block;
+		height: 1050px;
+		width:100%;
+		}
+		
+		
+		
+			.up_sec{
+		  float:left;
+			width:98%;
+			height:540px;
+		     margin-bottom: 10px;
+			background:#ECECEC;
+			border-radius: 10px;
+			}
+
+        	.view_order{
+        	 float:left;
+			width:98%;
+			height:550px;
+			background:#ECECEC;
+			border-radius: 7px;
+			margin-top: 10px;
+			}
+
+
+	
+	
+	.upload-so{
+			padding: 5px;
+			border:none;
+			border-radius: 5px;
+			color:#fff;
+			background-color: #2ED9EC;
+			cursor: pointer;
+			
+		}
+		
+		
+			.upload-do{
+			padding: 5px;
+			border:none;
+			border-radius: 5px;
+			color:#fff;
+			background-color: #1AFF48;;
+			cursor: pointer;
+			margin-right:25px;
+			margin-top: 5px;
+			
+		}
+		
+			
+
+		.price{
+				width: 250px;
+				height: 10px;
+				border:none;
+				border-radius:10px;
+				padding: 10px;
+			}
+			
+			
+		.select{
+			width: 200px;
+			
+			}			
+			
+			.cats{
+				margin-right:20px;
+				width:130px;
+				float: right;
+				}
+			
+			.pics{
+					width: 140px;
+						
+				}
+				
+				.headers{
+				padding:10px;
+				color: #fff;
+				font-size: 20px;
+				}
+			
+			.headers1{
+			border: 2px solid #000;
+	    	border-radius: 5px;
+	    	margin-right: 50px;
+			float:right;
+			padding:7px;
+			color: #000;
+			font-size: 15px;
+			}
+
+
+    		   .Tcrollbar{ 
+                    overflow: scroll;
+                    height:390px;
+                    width:100%;
+                    overflow-y:scroll;
+                    overflow-x:hidden;
+                   }
+                   
+               
+                .btn{
+               padding: 5px;
+               color:#fff;
+               font-size:2em;
+               font-family: sans-serif;
+               border:none;
+               float: right;
+                margin:5px;
+               background: red;
+                 cursor: pointer;
+               border-radius: 3px;
+               
+               }
+               
+               
+          	.boxes{
+			width: 100%;
+			align-content:center;
+			background-color:#ECECEC;
+			border-radius: 10px;
+			box-shadow: 0px 0px 5px 5px rgba(0,0,0.3);
+			display: inline-block;
+			
+               
+        }
+        
+        
+        	.ui-growl{
+				
+				top:30%;
+				left: 10%;
+			}
+		
+}
+
+
+ @media(max-width:980px)    { 
+		*{
+		padding: 0px;
+		margin: 0px;
+		}
+		
+		
+		
+		.base{
+		height: 1050px;
+		width:100%;
+		}
+		
+			.top_nav{
+			background: #E59327;
+			height: 70px;
+			}
+		
+		.inner_section{
+		display:inline-block;
+		height: 1050px;
+		width:100%;
+		}
+		
+		
+		
+			.up_sec{
+		  float:left;
+			width:95%;
+			height:610px;
+			background:#ECECEC;
+			border-radius: 7px 0px 0px 7px;
+			margin-bottom: 10px;
+			}
+
+     	.view_order{
+			width:95%;
+			height:550px;
+			background:#ECECEC;
+			border-radius: 7px;
+			}
+			
+		.upload-so{
+				padding: 5px;
+				border:none;
+				border-radius: 5px;
+				color:#fff;
+				background-color: #2ED9EC;
+				
+			}
+
+		.price{
+				width: 250px;
+				height: 10px;
+				border:none;
+				border-radius:10px;
+				padding: 10px;
+			}
+			
+			
+		.select{
+			width: 200px;
+			}			
+			
+			.cats{
+				margin-right:20px;
+				width:130px;
+				float: right;
+				}
+			
+			.pics{
+					width: 140px;
+						
+				}
+
+ 	
+			
+				.headers{
+				padding:10px;
+				color: #fff;
+				font-size: 20px;
+				}
+				
+				.headers1{
+				border: 2px solid #000;
+		    	border-radius: 5px;
+		    	margin: 10px;
+				float:right;
+				margin-right:1px;
+				padding:7px;
+				color: #000;
+				font-size: 15px;
+				}
+			
+			.spa{
+		   	margin-left:2%; 
+			}
+
+
+				   .Tcrollbar{ 
+                    overflow: scroll;
+                    height:390px;
+                    width:100%;
+                    overflow-y:scroll;
+                    overflow-x:hidden;
+       
+                   }
+                   
+           .upload-do{
+			padding: 5px;
+			border:none;
+			border-radius: 5px;
+			color:#fff;
+			background-color: #1AFF48;;
+			cursor: pointer;
+			margin-right:25px;
+			margin-top: 5px;
+			
+			
+		}
+		
+			.ui-growl{
+				top:30%;
+				left: 10%;
+			}
+       
+}
+
+
+
+ .footer{
+ width: 100%;
+ height: 100px;
+
+ }
+
+</style>
+
+</h:head>
+
+<h:body>
+
+
+
+		<img   class="spin"   src="images/spinner.gif"/>
+
+<div class="body">
+				<div class="top_nav">
+					
+					<h:form>
+					<h:commandButton    class="headers" value=" C Panel"    action="#{admin_user.sign_out}"/>
+
+					
+					<h:commandButton     class="headers1"     value="Sign in"   action="admin_sign_in.jsp"/>
+					<h:commandButton     class="headers1"     value="Current:  #{stat.current}"    disabled="true"/>
+					
+					
+					<!--	 <h:commandButton  id="wer"    class="headers1"     value="Notification #//{notifications.noti}"   action="#//{downloadSsec.view_sub_noti}">
+				  	<p:poll    update="wer"  interval="5"    />listener="#//{notifications.read_noti}"
+					</h:commandButton> -->
+					
+					</h:form>
+					
+					</div>
+				
+						<div  class="base">
+								<div   class="inner_section">
+						
+								      <div   class="spa">
+										<br/>
+										<h:form    enctype="multipart/form-data">
+										  <p:growl id="oi" showDetail="true"   life="2500"/>
+					                    
+											<div  class="up_sec">
+											<br/>
+											<p:outputLabel  value="Upload Sections"    />
+												<hr/>
+											<br/>
+										      <h:inputText     class="price"      value="#{admin_user.title}"   autocomplete="off">
+										    	<f:passThroughAttribute name="placeholder"    value="Title"/>
+										    	</h:inputText>
+										    	<br/><br/>
+										    	
+										    	 <h:inputText     class="price"      value="#{admin_user.source}"   autocomplete="off">
+										    	<f:passThroughAttribute name="placeholder"    value="Source"/>
+										    	</h:inputText>
+										    	<br/><br/>
+										    	
+										    	
+										   	   <h:inputTextarea     class="write"      value="#{admin_user.write}"   autocomplete="off">
+										    	<f:passThroughAttribute name="placeholder"    value="write up "/>
+										    	</h:inputTextarea>
+										    	<br/><br/>
+										    	
+										    
+										           <h:selectOneMenu value="#{admin_user.rols}"    class="select">
+					                                     <f:selectItem itemValue="#{admin_user.a0}" itemLabel="#{admin_user.a0}"/>
+					                                     <f:selectItem itemValue="#{admin_user.a1}" itemLabel="#{admin_user.a1}"/>
+					                                     <f:selectItem itemValue="#{admin_user.a2}" itemLabel="#{admin_user.a2}"/>   
+					                           			<f:ajax event="blur" listener="#{admin_user.read()}" render="oi"/>
+					                           </h:selectOneMenu> 
+					                           <br/><br/>
+					                           
+					                       			
+					                       			
+					                                <p:fileUpload    mode="simple"      value="#{admin_user.uploadedFile}"   onstart="spinners()"    oncomplete="close_spinner()"    style="width:150px;  background:red"     />	
+									         		&nbsp;	 &nbsp;	
+													 <p:fileUpload    mode="simple"    value="#{admin_user.uploadedFile2}"   onstart=""    oncomplete=""   style="width:150px; background:blue"/>
+					                        		
+													<table  style="width: 100%; margin: 20px;"  >
+													
+													<tr  >
+													
+													<td >
+													<h:commandButton    value="Run way"    class="upload-so"    action="#{admin_user.run_way}"    style="background-color:black">
+														
+													</h:commandButton>
+																&nbsp;	 
+														<h:commandButton    value="Fashion"    class="upload-so"    action="#{admin_user.fashion}">
+															
+														</h:commandButton>
+																&nbsp;			
+												       <h:commandButton   value="News"    class="upload-so"    action="#{admin_user.news}">
+												       	
+												       </h:commandButton>
+														&nbsp;					
+												       <h:commandButton   value="Life style"    class="upload-so"    action="#{admin_user.life_style}">
+												     	
+												       </h:commandButton>
+		
+													       &nbsp;			
+										     	       	<h:commandButton   id="ems"  value="upload"    class="upload-do"    action="#{admin_user.send_in}"  update="oi">
+										          	  	<f:param   name="vi"   value="#{stat.current}"/>
+										     	       	</h:commandButton>
+																				
+																		
+															   
+															   	</td>
+													      </tr>
+													
+													</table>						
+																						
+															   		
+											</div>
+									</h:form>
+											
+											
+											
+											
+											
+											
+		<div  class="view_order">
+				<h:form  id="views">
+					               <p:growl     showDetail="true"   life="2500"/>
+					                          
+								<br/>
+								<p:outputLabel  value="Order Sections"/>
+							 	<hr/>
+							
+										<table  style="width: 100%; margin: 10px;  text-align: left; margin-left: 20px;"  >
+													
+													<tr  >
+													
+													<td >
+													<h:commandButton  id="e1"   value="Run way"    class="upload-so"    action="#{admin_user.run_drop}">
+														<f:ajax  execute="e1"  render="@form"/>
+													</h:commandButton>
+																&nbsp;	 
+														<h:commandButton   id="e2"  value="Fashion"    class="upload-so"    action="#{admin_user.Fashion_drop}">
+															<f:ajax  execute="e2"  render="@form"/>
+														</h:commandButton>
+																&nbsp;	 				
+												       <h:commandButton   id="e3"  value="News"    class="upload-so"    action="#{admin_user.News_drop}">
+												       	<f:ajax  execute="e3"  render="@form"/>
+												       </h:commandButton>
+												       
+												       
+												  
+												       
+												       	&nbsp;			
+												       <h:commandButton  id="e5"   value="Life style"    class="upload-so"    action="#{admin_user.Life_style_drop}">
+												       	<f:ajax  execute="e5"  render="@form"/>
+												       </h:commandButton>
+												       
+												       
+												       
+												            	&nbsp;	 			
+												       <h:commandButton   id="e4"  value="Visit"    class="upload-so"    action="#{admin_user.visit}">
+												       	<f:ajax  execute="e4"  render="@form"/>
+												       </h:commandButton>
+														
+														
+														   	</td>
+													      </tr>
+													      
+													      
+													
+													</table>	
+								<br/>
+								
+								 <div id="style-2" class="Tcrollbar">
+                                  	<div class="Torce-overflow">
+											<ui:repeat var="vex"    value="#{admin_user.lis}">
+												<br/>
+											    	<br/>
+													    <center>
+														    <div   class="boxes">
+																	    	<h:inputHidden  value="#{vex.id}"/>	
+																	    	 <table>
+																	    	 <tr>
+																	    	 <td>
+																	    	<p:outputLabel      value="#{vex.id}"  />
+																		    
+																	    	 </td>
+																	    	  </tr>
+																	    	  
+																	    	  
+																	    	   <tr>
+																	    	 <td>
+																	    		<h:outputLabel      value="File name:  #{vex.paths}"  class="siz" />
+																	    	 </td>
+																	    	  </tr>
+																	    	  
+		
+																	    	  <tr>
+																	    	  <td>
+																	    	  <p:outputLabel    value="#{vex.title}" />
+																	    	  </td>
+																	    	  </tr>
+																	    	  
+																	    	  
+																	    	  <tr>
+																		    	 <td>
+																		        	<p:outputLabel    value="#{vex.write_up}" />
+																		    	 </td>
+																	    	  </tr>
+																	    	  
+																	    	 </table>
+																	        	 
+																	        	  <div  class="container">
+																					<div  class="card">
+																				
+																							<h:commandButton  value="X"  action="#{admin_user.delete}"    class="btn">
+																										   <f:param  name="pat"    value="#{vex.paths}"/>
+																							</h:commandButton>
+																				   </div>
+																			   </div>	
+													    	</div>
+													   </center> 
+											</ui:repeat>
+										
+							    </div>
+							</div>
+			</h:form>
+	</div>
+											
+							
+									
+								</div>	
+							
+						</div>
+						</div>
+						
+						<div   class="footer">
+						
+					
+						</div>
+			</div>		
+</h:body>
+</html>
